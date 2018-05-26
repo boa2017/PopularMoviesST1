@@ -1,0 +1,176 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="thumbnail">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:contentDescription">@string/movie_poster</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="title_heading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toEndOf">@id/thumbnail</item>
+        <item name="android:layout_toRightOf">@id/thumbnail</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:text">@string/movie_title</item>
+    </style>
+
+    <style name="movie_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toEndOf">@id/thumbnail</item>
+        <item name="android:layout_toRightOf">@id/thumbnail</item>
+        <item name="android:textColor">@color/text_font</item>
+        <item name="android:layout_below">@+id/title_heading</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+
+    <style name="date_heading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toEndOf">@id/thumbnail</item>
+        <item name="android:layout_toRightOf">@id/thumbnail</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_below">@+id/title_heading</item>
+        <item name="android:text">@string/movie_release_date</item>
+        <item name="android:layout_marginTop">34dp</item>
+    </style>
+
+
+    <style name="release_Date">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/date_heading</item>
+        <item name="android:layout_toEndOf">@id/thumbnail</item>
+        <item name="android:layout_toRightOf">@id/thumbnail</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/text_font</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="vote_heading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toEndOf">@id/thumbnail</item>
+        <item name="android:layout_toRightOf">@id/thumbnail</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:text">@string/movie_vote_average</item>
+        <item name="android:layout_below">@+id/thumbnail</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/normal_rating_color</item>
+        <item name="colorControlActivated">@color/activated_rating_color</item>
+    </style>
+
+    <style name="tv_movie_vote_average">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toRightOf">@id/movie_vote_average_section</item>
+        <item name="android:textColor">@color/text_font</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_alignBottom">@+id/movie_vote_average_section</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+
+    <style name="overview_heading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toEndOf">@id/thumbnail</item>
+        <item name="android:layout_toRightOf">@id/thumbnail</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:text">@string/movie_overview</item>
+        <item name="android:layout_below">@+id/tv_movie_vote_average</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+    <style name="movie_overview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toEndOf">@id/thumbnail</item>
+        <item name="android:layout_toRightOf">@id/thumbnail</item>
+        <item name="android:textColor">@color/text_font</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_below">@+id/overview_heading</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+    <style name="error_message_display">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/error_message_display</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:text">@string/error_message</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="movie_poster">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="linear_layout_card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <style name="card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">280dp</item>
+
+    </style>
+
+    <style name="tv_movie_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:text">@string/movie_title</item>
+        <item name="android:textColor">@color/normal_rating_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">#8c000000</item>
+    </style>
+
+</resources>
+
